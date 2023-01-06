@@ -1,16 +1,16 @@
+function Italics() {
+  // Get the value of the input
+  var input4 = document.getElementById('input4').value;
+
+  // Reverse the input using the split, reverse, and join methods
+  var italicize = input4.italics();
+
+  // Update the output div with the reversed text
+  document.getElementById('output4').innerHTML = italicize;
+}
 
 
-//Italics
-function toItalics(text) {
-    return '<i>' + text + '</i>';
-  }
-  
-  let input = 'This is some text';
-  let output = toItalics(input);
-  console.log(output);  // Output: '<i>This is some text</i>'
-
-
-
+/*
 //Bold
 function toBold(text) {
     return '<b>' + text + '</b>';
@@ -19,8 +19,8 @@ function toBold(text) {
 let input = 'This is some text';
 let output = toBold(input);
 console.log(output);  // Output: '<b>This is some text</b>'  
-
-
+*/
+/*
 //Strikethrough
 function toStrikethrough(text) {
   return '<s>' + text + '</s>';
@@ -39,3 +39,4 @@ function toUnderline(text) {
 let input = 'This is some text';
 let output = toUnderline(input);
 console.log(output);  // Output: '<u>This is some text</u>'
+*/
