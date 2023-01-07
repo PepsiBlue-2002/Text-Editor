@@ -3,8 +3,9 @@
   <head>
     <!--CSS-->
     <link rel="stylesheet" href="styles.css">
-    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+    <!--Adding Bootstrap for page cleanup-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
 
   <body> 
@@ -23,35 +24,67 @@
 </div>
 -->
 
-    <!--Reverse-->
-    <input type="text" id="input1">
-    <button onclick="reverseInput()">Reverse</button>
-    <div id="output1"></div>
+<!--Text Edit Boxes and Input Fields-->
+<div class="container">
+  <div class="row justify-content-start">
+    
+      <div class="col-4">
+        <!--Reverse-->
+        <input type="text" id="input1">
+        <button onclick="reverseInput()">Reverse</button>
+        <div id="output1"></div>
+      </div>
 
-    <!--All Caps-->
-    <input type="text" id="input2">
-    <button onclick="allCaps()">CAPS-LOCK</button>
-    <div id="output2"></div>
+      <div class="col-4">
+        <!--All Caps-->
+        <input type="text" id="input2">
+        <button onclick="allCaps()">CAPS-LOCK</button>
+        <div id="output2"></div>
+      </div>
 
-    <!--Lower Case-->
-    <input type="text" id="input3">
-    <button onclick="lowerCase()">lower-case</button>
-    <div id="output3"></div>
+      <div class="col-4">
+        <!--Lower Case-->
+        <input type="text" id="input3">
+        <button onclick="lowerCase()">lower-case</button>
+        <div id="output3"></div>
+      </div>
 
-    <!--Italics-->
-    <input type="text" id="input4">
-    <button onclick="Italics()">Italicize</button>
-    <div id="output4"></div>
+  </div>
 
-    <!--Bold-->
-    <input type="text" id="input5">
-    <button onclick="bold()">Bold</button>
-    <div id="output5"></div>
 
-    <!--Bold-->
-    <input type="text" id="input6">
-    <button onclick="Strike()">Strikethrough</button>
-    <div id="output6"></div>
+       
+  <div class="row justify-content-center">
+      
+      <div class="col-4">
+        <!--Italics-->
+        <input type="text" id="input4">
+        <button onclick="Italics()">Italicize</button>
+        <div id="output4"></div>
+      </div>
+
+      <div class="col-4">
+        <!--Bold-->
+        <input type="text" id="input5">
+        <button onclick="bold()">Bold</button>
+        <div id="output5"></div>
+      </div>
+
+      <div class="col-4">
+        <!--Strikethrough-->
+        <input type="text" id="input6">
+        <button onclick="Strike()">Strikethrough</button>
+        <div id="output6"></div>
+      </div>
+
+
+      <div class="col-4">
+        <!--Underline-->
+        <input type="text" id="input7">
+        <button onclick="toUnderline()">Underline</button>
+        <div id="output7"></div>
+      </div>
+
+  </div>
 
    
 
@@ -60,6 +93,10 @@
     <script src="Capitalize.js"></script>
     <script src="LowerCase.js"></script>
     <script src="Basics.js"></script>
+    <!--<script src="Output.js"></script>-->
     <!--<script src="Flip.js"></script>-->
   </body>
 </html>
+
+
+<!--<sup>2</sup>-->

@@ -8,7 +8,7 @@ function Italics() {
 
 //Bold
 //'<b>' <---- May have to use for browser compatibility since bold() is deprecated but I'm chillin.
-//'<b>' + '' + '</b>';
+//'<b>' + '' + '</b>';   update: it worked for now; leaving it
 function bold() {
   var input5 = document.getElementById('input5').value;
   var bolded = input5.bold();
@@ -24,14 +24,10 @@ function Strike() {
 };
 
 
-
-/*
 //Underline
-function toUnderline(text) {
-  return '<u>' + text + '</u>';
-}
-
-let input = 'This is some text';
-let output = toUnderline(input);
-console.log(output);  // Output: '<u>This is some text</u>'
-*/
+// Couldn't get toUnderline() to work possibly due to the compatibility issues so used classic ol' HTML.
+function toUnderline() {
+  let input7 = document.getElementById('input7').value;
+  let output7 = document.getElementById('output7');
+  output7.innerHTML = '<u>' + input7 + '</u>';
+};

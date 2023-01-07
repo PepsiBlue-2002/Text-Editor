@@ -1,9 +1,6 @@
-
-      /* Add some styling to the page */
       body {
         font-family: sans-serif;
-        margin: 20px;
-        
+        margin: 20px; 
       }
 
       input[type="text"] {
@@ -25,7 +22,7 @@
       }
 
       output[type="text"] {
-        font-size: 16px;
+        font-size: 10px;
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
