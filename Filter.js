@@ -101,3 +101,64 @@ for (let i = 0; i < text.length; i++) {
 }
 
 console.log(newText); // output: "ThIs Is SoMe SaMpLe TeXt"
+
+
+
+
+//Capitalize the first letter of each sentence
+function capitalizeFirstLetter(str) {
+  // Split the string into an array of sentences
+  const sentences = str.split('. ');
+  // Loop through the array and capitalize the first letter of each sentence
+  for (let i = 0; i < sentences.length; i++) {
+    sentences[i] = sentences[i].charAt(0).toUpperCase() + sentences[i].slice(1);
+  }
+  // Join the array back into a single string and return it
+  return sentences.join('. ');
+}
+
+// Example usage
+const input = "hello, world. this is a test. i hope it works.";
+const output = capitalizeFirstLetter(input);
+console.log(output); // Output: "Hello, world. This is a test. I hope it works."
+
+
+
+
+
+
+
+//do this using the PDFTron PDF library in JavaScript:
+
+const PDFTron = require('pdftron');
+
+// Initialize the PDFTron library
+PDFTron.PDFNet.initialize().then(() => {
+  // Open the PDF file
+  const doc = await PDFTron.PDFNet.PDFDoc.createFromURL('myfile.pdf');
+  doc.initSecurityHandler();
+  doc.lock();
+
+  // Get the first page of the PDF
+  const page = doc.getPage(1);
+
+  // Get the page's text objects
+  const textObjects = page.getTextObjects();
+
+  // Loop through the text objects and set the fill color to red
+  textObjects.forEach((textObject) => {
+    textObject.setFillColor(1, 0, 0);
+  });
+
+  // Save the changes to the PDF file
+  doc.save('myfile_modified.pdf', PDFTron.PDFNet.SDFDoc.SaveOptions.e_linearized);
+
+  // Close the PDF document
+  doc.close();
+});
+
+
+/*This code uses the PDFTron library to open a PDF file, get the text objects on the first page, and set the fill color of each text object to red. 
+It then saves the modified PDF to a new file.
+Note that this is just one way to change the color of text in a PDF file, and there are other libraries and techniques that can be used as well.
+*/
