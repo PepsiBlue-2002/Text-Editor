@@ -162,3 +162,27 @@ PDFTron.PDFNet.initialize().then(() => {
 It then saves the modified PDF to a new file.
 Note that this is just one way to change the color of text in a PDF file, and there are other libraries and techniques that can be used as well.
 */
+
+
+
+
+
+
+//Scramble the letters from each word from input
+
+function scrambleText(input) {
+  // Split the input string into an array of characters
+  const inputArray = input.split('');
+  // Use the Fisher-Yates shuffle algorithm to shuffle the array
+  for (let i = inputArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [inputArray[i], inputArray[j]] = [inputArray[j], inputArray[i]];
+  }
+  // Join the array back into a single string and return it
+  return inputArray.join('');
+}
+
+// Example usage
+const output = scrambleText("This is some user input");
+console.log(output); // Output: "iThs is smoe urse itnup" (text scrambled)
+
