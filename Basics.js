@@ -31,3 +31,11 @@ function toUnderline() {
   let output7 = document.getElementById('output7');
   output7.innerHTML = '<u>' + input7 + '</u>';
 };
+
+
+//Superscript
+function Superscript() {
+  let input8 = document.getElementById('input8').value;
+  let output8 = document.getElementById('output8');
+  output8.innerHTML = '<sup>' + input8 + '</sup>';
+};

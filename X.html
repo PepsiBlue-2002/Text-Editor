@@ -25,36 +25,11 @@
 -->
 
 <!--Text Edit Boxes and Input Fields-->
+
 <div class="container">
-  <div class="row justify-content-start">
-    
-      <div class="col-4 p-4">
-        <!--Reverse-->
-        <input type="text" id="input1">
-        <button onclick="reverseInput()">Reverse</button>
-        <div id="output1"></div>
-      </div>
-
-      <div class="col-4 p-4">
-        <!--All Caps-->
-        <input type="text" id="input2">
-        <button onclick="allCaps()">CAPS-LOCK</button>
-        <div id="output2"></div>
-      </div>
-
-      <div class="col-4 p-4">
-        <!--Lower Case-->
-        <input type="text" id="input3">
-        <button onclick="lowerCase()">lower-case</button>
-        <div id="output3"></div>
-      </div>
-
-  </div>
-
-
-       
+  <!--Row One-->
+  <h3>Basics</h3>      
   <div class="row justify-content-center">
-      
       <div class="col-4 p-4">
         <!--Italics-->
         <input type="text" id="input4">
@@ -76,7 +51,6 @@
         <div id="output6"></div>
       </div>
 
-
       <div class="col-4 p-4">
         <!--Underline-->
         <input type="text" id="input7">
@@ -84,15 +58,65 @@
         <div id="output7"></div>
       </div>
 
+      <div class="col-4 p-4">
+        <!--SuperScript-->
+        <input type="text" id="input8">
+        <button onclick="Superscript()">Superscript</button>
+        <div id="output8"></div>
+      </div>
   </div>
 
+
+  <!--Row 2-->
+  <h3>Basics 2</h3>
+  <div class="row justify-content-start">    
+        <div class="col-4 p-4">
+          <!--Reverse-->
+          <input type="text" id="input1">
+          <button onclick="reverseInput()">Reverse</button>
+          <div id="output1"></div>
+        </div>
+  
+        <div class="col-4 p-4">
+          <!--All Caps-->
+          <input type="text" id="input2">
+          <button onclick="allCaps()">CAPS-LOCK</button>
+          <div id="output2"></div>
+        </div>
+  
+        <div class="col-4 p-4">
+          <!--Lower Case-->
+          <input type="text" id="input3">
+          <button onclick="lowerCase()">lower-case</button>
+          <div id="output3"></div>
+        </div>
+    </div>
+
+  <!--Row 3-->
+  <h3>Fun Features (Beta Version)</h3>
+  <div class="row justify-content-start">    
+        <div class="col-4 p-4">
+          <!--Reverse-->
+          <input type="text" id="input9">
+          <button onclick="capitalizeEverySecondCharacter()">Moron Text</button>
+          <div id="output9"></div>
+        </div>
+
+
+        <div class="col-4 p-4">
+          <!--Scramble-->
+          <input type="text" id="input10">
+          <button onclick="scrambleText()">Scramble</button>
+          <div id="output10"></div>
+        </div>
+
+</div>
    
 
     <!--Scripts-->
-    <script src="Reverse.js"></script>
-    <script src="Capitalize.js"></script>
-    <script src="LowerCase.js"></script>
     <script src="Basics.js"></script>
+    <script src="Basics2.js"></script>
+    <script src="FunFeatures.js"></script>
     <!--<script src="Output.js"></script>-->
     <!--<script src="Flip.js"></script>-->
   </body>
