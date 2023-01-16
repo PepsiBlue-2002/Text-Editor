@@ -166,23 +166,149 @@ Note that this is just one way to change the color of text in a PDF file, and th
 
 
 
+//Invisible Text
 
-
-//Scramble the letters from each word from input
-
-function scrambleText(input) {
-  // Split the input string into an array of characters
-  const inputArray = input.split('');
-  // Use the Fisher-Yates shuffle algorithm to shuffle the array
-  for (let i = inputArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [inputArray[i], inputArray[j]] = [inputArray[j], inputArray[i]];
+function invisibleText() {
+  // Get the input value from the form
+  let input = document.getElementById("user-input").value;
+  // Create an empty string
+  let invisibleString = "";
+  // Iterate over the input string and add zero width spaces (U+200B)
+  for(let i = 0; i < input.length; i++){
+      invisibleString += "\u200B";
   }
-  // Join the array back into a single string and return it
-  return inputArray.join('');
+  // Display the invisible text in the output element
+  document.getElementById("output").innerHTML = invisibleString;
 }
 
-// Example usage
-const output = scrambleText("This is some user input");
-console.log(output); // Output: "iThs is smoe urse itnup" (text scrambled)
+
+
+
+
+
+
+//Zalgo Glitch?
+
+function zalgoGlitch() {
+  // Get the input value from the form
+  let input = document.getElementById("user-input").value;
+  // Array of possible Zalgo characters
+  let zalgoChars = ["́","̀","̂","̃","̄","̅","̆","̇","̈","̉","̊","̋","̌","̍","̎","̏","̐","̑","̒","̓","̔","̕","̖","̗",
+  "̘","̙","̚","̛","̜","̝","̞","̟","̠","̡","̢","̣","̤","̥","̦","̧","̨","̩","̪","̫","̬","̭","̮","̯","̰","̱","̲","̳","̴","̵","̶","̷","̸","̹","̺","̻","̼","̽","̾","̿"];
+}
+/*
+let output = "";
+// Iterate over each character in the input string
+for (let char of input) {
+    // Add the character to the output string
+    output += char;
+    // Add a random number of random Zalgo characters after the character
+    for (let i = 0; i < Math.floor(Math.random() * 7); i++) {
+        output += zalgoChars[Math.floor(Math.random() * zalgoChars.length)];
+    }
+}
+// Display the glitched text in the output element
+document.getElementById("output").innerHTML = output;
+}
+*/
+
+
+
+
+
+//Flip Text Upside Down
+function flipText() {
+  // Get the input value from the form
+  let input = document.getElementById("user-input").value;
+  // Create an object with the characters to be inverted
+  let invertedChars = {
+      "a": "ɐ",
+      "b": "q",
+      "c": "ɔ",
+      "d": "p",
+      "e": "ǝ",
+      "f": "ɟ",
+      "g": "ƃ",
+      "h": "ɥ",
+      "i": "ı",
+      "j": "ɾ",
+      "k": "ʞ",
+      "l": "ן",
+      "m": "ɯ",
+      "n": "u",
+      "o": "o",
+      "p": "d",
+      "q": "b",
+      "r": "ɹ",
+      "s": "s",
+      "t": "ʇ",
+      "u": "n",
+      "v": "ʌ",
+      "w": "ʍ",
+      "x": "x",
+      "y": "ʎ",
+      "z": "z",
+      "z": "z",
+      "A": "∀",
+      "B": "q",
+      "C": "Ɔ",
+      "D": "p",
+      "E": "Ǝ",
+      "F": "Ⅎ",
+      "G": "פ",
+      "H": "H",
+      "I": "I",
+      "J": "ſ",
+      "K": "ʞ",
+      "L": "˥",
+      "M": "W",
+      "N": "N",
+      "O": "O",
+      "P": "d",
+      "Q": "b",
+      "R": "R",
+      "S": "S",
+      "T": "┴",
+      "U": "∩",
+      "V": "Λ",
+      "W": "M",
+      "X": "X",
+      "Y": "⅄",
+      "Z": "Z"
+      };
+      // Create an empty string for the inverted text
+      let invertedText = "";
+      // Iterate over each character in the input string
+      for (let char of input) {
+          // Check if the character is in the invertedChars object
+          if (char in invertedChars) {
+              // Add the inverted character to the invertedText string
+              invertedText += invertedChars[char];
+          } else {
+              // Add the original character to the invertedText string
+              invertedText += char;
+          }
+      }
+      // Display the inverted text in the output element
+      document.getElementById("output").innerHTML = invertedText;
+  }
+
+
+
+
+/* I dont write Python but this is an interesting library  I found that matches rhyming words
+  import nltk
+from nltk.corpus import cmudict
+
+nltk.download('cmudict')
+
+def get_rhyming_words(word):
+    d = cmudict.dict()
+    rhyming_words = [word for word, pron in d.items() if pron[-3:] == d[word][-3:]]
+    return rhyming_words
+
+word = "cat"
+rhyming_words = get_rhyming_words(word)
+print(rhyming_words)
+*/
 
