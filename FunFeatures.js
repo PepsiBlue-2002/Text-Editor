@@ -100,6 +100,25 @@ function flipText() {
   };
 
 
+  function addKerning() {
+    let inputText = document.getElementById("input13").value;
+    let kernedText = "";
+    for (let i = 0; i < inputText.length; i++) {
+        kernedText += inputText[i];
+        if (i !== inputText.length - 1) {
+            kernedText += "&nbsp;".repeat(5);
+        }
+    }
+    document.getElementById("output13").innerHTML = kernedText;
+};
+
+
+
+
+
+
+
+
 //Zalgo Glitch
   function zalgoGlitch1() {
     // Get the input value from the form
@@ -120,5 +139,4 @@ for (let char of input12) {
 }
 // Display the glitched text in the output element
 document.getElementById("output12").innerHTML = output12;
-}
-  
+};
