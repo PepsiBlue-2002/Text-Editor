@@ -1,9 +1,9 @@
 //Reverse
 function reverseInput() {
 
-    var input = document.getElementById('input1').value;
+    let input = document.getElementById('input1').value;
 
-    var reversed = input.split('').reverse().join('');
+    let reversed = input.split('').reverse().join('');
 
     document.getElementById('output1').innerHTML = reversed;
 };
@@ -11,9 +11,9 @@ function reverseInput() {
 //Caps-Lock
 function allCaps() {
 
-    var input = document.getElementById('input2').value;
+    let input = document.getElementById('input2').value;
 
-    var caps = input.toUpperCase();
+    let caps = input.toUpperCase();
 
     document.getElementById('output2').innerHTML = caps;
 };
@@ -21,9 +21,27 @@ function allCaps() {
 //Lower-case
 function lowerCase() {
 
-    var input = document.getElementById('input3').value;
+    let input = document.getElementById('input3').value;
 
-    var nocaps = input.toLowerCase();
+    let nocaps = input.toLowerCase();
 
     document.getElementById('output3').innerHTML = nocaps;
 };
+
+//Superscript
+function Subscript() {
+    let input = document.getElementById('input15').value;
+
+    let output = document.getElementById('output15');
+
+    output.innerHTML = '<sub>' + input + '</sub>';
+};
+
+//toggel-case
+function toggleCase() {
+    let input = document.getElementById("input16").value;
+    let output = input.split('').map(function(char) {
+      return char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase();
+    }).join('');
+    document.getElementById("output16").innerHTML = output;
+  }

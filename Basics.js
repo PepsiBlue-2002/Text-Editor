@@ -1,7 +1,7 @@
 //Italics
 function Italics() {
-  var input4 = document.getElementById('input4').value;
-  var italicize = input4.italics();
+  let input4 = document.getElementById('input4').value;
+  let italicize = input4.italics();
   document.getElementById('output4').innerHTML = italicize;
 };
 
@@ -10,16 +10,16 @@ function Italics() {
 //'<b>' <---- May have to use for browser compatibility since bold() is deprecated but I'm chillin.
 //'<b>' + '' + '</b>';   update: it worked for now; leaving it
 function bold() {
-  var input5 = document.getElementById('input5').value;
-  var bolded = input5.bold();
+  let input5 = document.getElementById('input5').value;
+  let bolded = input5.bold();
   document.getElementById('output5').innerHTML = bolded;
 };
 
 
 //Strikethrough
 function Strike() {
-  var input6 = document.getElementById('input6').value;
-  var strikeout = input6.strike();
+  let input6 = document.getElementById('input6').value;
+  let strikeout = input6.strike();
   document.getElementById('output6').innerHTML = strikeout;
 };
 

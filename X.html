@@ -10,7 +10,21 @@
 
   <body> 
 
-    <h1>Text Editor</h1> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Text-Editor</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
 <!--
 <h3>Use input section to alter/convert text.</h3>
 <div>
@@ -28,7 +42,11 @@
 
 <div class="container">
   <!--Row One-->
-  <h3>Basics</h3>      
+  
+  <h3>
+    Basics
+  </h3>
+
   <div class="row justify-content-center">
       <div class="col-4 p-4">
         <!--Italics-->
@@ -69,7 +87,7 @@
 
   <!--Row 2-->
   <h3>Basics 2</h3>
-  <div class="row justify-content-start">    
+  <div class="row justify-content-center">    
         <div class="col-4 p-4">
           <!--Reverse-->
           <input type="text" id="input1">
@@ -90,10 +108,25 @@
           <button onclick="lowerCase()">lower-case</button>
           <div id="output3"></div>
         </div>
+
+        <div class="col-4 p-4">
+          <!--SubScript-->
+          <input type="text" id="input15">
+          <button onclick="Subscript()">Subscript</button>
+          <div id="output15"></div>
+        </div>
+
+        <div class="col-4 p-4">
+          <!--tOGGLEcAse-->
+          <input type="text" id="input16">
+          <button onclick="toggleCase()">tOGGLE cASE</button>
+          <div id="output16"></div>
+        </div>
+
     </div>
 
   <!--Row 3-->
-  <h3>Fun Features (Beta Version)</h3>
+  <h3>Fun Features</h3>
   <div class="row justify-content-start">    
         <div class="col-4 p-4">
           <!--Reverse-->
@@ -117,9 +150,17 @@
         </div>
 
         <div class="col-4 p-4">
-        <input type="text" id="input13">
+          <!--Spacing-->
+          <input type="text" id="input13">
           <button onclick="addKerning()">Spaced</button>
           <div id="output13"></div>
+        </div>
+
+        <div class="col-4 p-4">
+          <!--Replace Vowels-->
+          <input type="text" id="input14">
+          <button onclick="replaceVowels()">Spanglish</button>
+          <div id="output14"></div>
         </div>
 
 

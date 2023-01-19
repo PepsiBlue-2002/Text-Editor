@@ -140,3 +140,50 @@ for (let char of input12) {
 // Display the glitched text in the output element
 document.getElementById("output12").innerHTML = output12;
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+//áéíñóúü¿¡   ÁÉÍÑÓÚ    Üü
+//Accent Mark Letters
+function replaceVowels() {
+  var input = document.getElementById("input14").value;
+  var output = input.replace(/[AEIOUaeiou!?]/gi, function(match) {
+    switch (match) {
+      case "a":
+        return "á";
+      case "e":
+        return "é";
+      case "i":
+        return "í";
+      case "o":
+        return "ó";
+      case "u":
+        return "ú";
+      case "?":
+        return "¿";
+      case "!":
+        return "¡";
+      case "A":
+        return "Á";
+      case "E":
+        return "É";
+      case "I":
+        return "Í";
+      case "O":
+        return "Ó";
+      case "U":
+        return "Ú";
+    }
+  });
+  document.getElementById("output14").innerHTML = output;
+}
