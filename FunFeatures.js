@@ -1,7 +1,7 @@
 //MoronText
 function capitalizeEverySecondCharacter() {
-    var input = document.getElementById('input9').value;
-    var newText = "";
+    let input = document.getElementById('input9').value;
+    let newText = "";
     for (let i = 0; i < input.length; i++) {
       if (i % 2 === 0) {
         newText += input[i].toUpperCase();
@@ -15,13 +15,13 @@ function capitalizeEverySecondCharacter() {
 
 //Scramble Text
 function scrambleText() {
-    var input = document.getElementById('input10').value;
+    let input = document.getElementById('input10').value;
     const inputArray = input.split('');
     for (let i = inputArray.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [inputArray[i], inputArray[j]] = [inputArray[j], inputArray[i]];
     }
-    var output = inputArray.join('');
+    let output = inputArray.join('');
     document.getElementById('output10').innerHTML = output;
 };
 
@@ -100,6 +100,7 @@ function flipText() {
   };
 
 
+//Kerning
   function addKerning() {
     let inputText = document.getElementById("input13").value;
     let kernedText = "";
@@ -113,44 +114,21 @@ function flipText() {
 };
 
 
-
-
-
-
-
-
 //Zalgo Glitch
   function zalgoGlitch1() {
-    // Get the input value from the form
     let input12 = document.getElementById("input12").value;
-    // Array of possible Zalgo characters
     let zalgoChars = ["́","̀","̂","̃","̄","̅","̆","̇","̈","̉","̊","̋","̌","̍","̎","̏","̐","̑","̒","̓","̔","̕","̖","̗",
     "̘","̙","̚","̛","̜","̝","̞","̟","̠","̡","̢","̣","̤","̥","̦","̧","̨","̩","̪","̫","̬","̭","̮","̯","̰","̱","̲","̳","̴","̵","̶","̷","̸","̹","̺","̻","̼","̽","̾","̿"];
 
   let output12 = "";
-// Iterate over each character in the input string
 for (let char of input12) {
-    // Add the character to the output string
     output12 += char;
-    // Add a random number of random Zalgo characters after the character
     for (let i = 0; i < Math.floor(Math.random() * 7); i++) {
         output12 += zalgoChars[Math.floor(Math.random() * zalgoChars.length)];
     }
 }
-// Display the glitched text in the output element
 document.getElementById("output12").innerHTML = output12;
 };
-
-
-
-
-
-
-
-
-
-
-
 
 
 //áéíñóúü¿¡   ÁÉÍÑÓÚ    Üü
