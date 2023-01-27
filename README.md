@@ -4,7 +4,7 @@
 This is a simple text editor that can be used to transorm and alter text in various ways.
 
 # Screenshot
-![Screenshot](Screenshot\XhtmlScreenshot.png)
+![XhtmlScreenshot](https://user-images.githubusercontent.com/116015574/215611009-da052cdd-6b73-4208-b208-a0d457ae1678.png)
 
 ## Built With
 - HTML
@@ -46,8 +46,9 @@ I didn't implement or even test this but it's there. Nothing works if you delete
 
 ## Notes
  I did add just a little bit of Bootstrap to straighten it up. I didn't adjust it for really any screens outside of basic desktops. The styles.css 
-contains the styling for everything. The index is X.html. I don't actually remember why I named it that. This the first README I've ever written so if 
-it's too much or too little. Maybe next time, right? If anyone ever does look at this code feel free to drop me a suggestion, advice, or otherwise.
+contains the styling for everything. The index is X.html. I don't actually remember why I named it that. Screenshot folder jsut hold the image for
+github. This the first README I've ever written so if it's too much or too little. Maybe next time, right? If anyone ever does look at this code feel 
+free to drop me a suggestion, advice, or otherwise.
 
 
 ## Links
