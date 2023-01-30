@@ -1,7 +1,7 @@
 # Text-Editor
 
 # Overview
-This is a simple text editor that can be used to transorm and alter text in various ways.
+This is a simple text editor that can be used to transform and alter text in various ways.
 
 # Screenshot
 ![XhtmlScreenshot](https://user-images.githubusercontent.com/116015574/215611009-da052cdd-6b73-4208-b208-a0d457ae1678.png)
